@@ -1,0 +1,506 @@
+@font-face {
+    src: url("B_Homa.ttf");
+    font-family: myfont;
+}
+
+@keyframes example1 {
+    0% { background-color: rgb(139, 242, 208);}
+    25% { background-color: mediumaquamarine; }
+    50% { background-color: #38b; }
+    78% { background-color: mediumaquamarine; }
+    100% { background-color: rgb(139, 242, 208); }
+}
+
+@keyframes example3 {
+    0% { background-color: rgb(139, 242, 208); }
+    50% { background-color: mediumaquamarine; }
+    100% { background-color: #38b; }
+}
+
+@keyframes example2 {
+    from { background-color: #38b; }
+    to { background-color: white; }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* #image1 {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+} */
+
+#navbar {
+    background-color: rgba(20, 30, 250, 0.3);
+    width: 100%;
+    padding: 1% 0;
+    margin: 0;
+    height: 22px;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s;
+    z-index: 894;
+}
+
+#navbar:hover {
+    background-color: rgba(20, 30, 250, 1);
+}
+
+#navbar>span {
+    color: white;
+    margin: -16px -6px 0 0;
+    display: inline-block;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    padding: 1% 1%;
+    border-left: #4466ff 3px solid;
+    transition: all 0.3s;
+}
+
+#navbar>span:hover {
+    background-color: #6962f8;
+}
+
+#left_about {
+    float: left;
+    text-align: center;
+    overflow: auto;
+    text-overflow: ellipsis;
+    border: 0;
+    border-right: #4466ff 3px solid;
+}
+
+
+#menu {
+    width: 14%;
+    float: right;
+    margin-top: 60px;
+    padding-left: 2%;
+}
+
+
+#ul_ {
+    list-style: none;
+    margin-left: 5%;
+}
+
+#ul_ li {
+    background-color: rgb(64, 218, 235);
+    transition: background-color 1s, transform 0.5s;
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 4px;
+}
+
+
+#ul_ li:nth-child(2n):hover {
+    transform: scale(1.2) translate(-10px);
+    background-color: rgb(21, 168, 185);
+}
+
+#ul_ li:nth-child(2n+1):hover {
+    transform: scale(1.2) translate(-10px);
+    background-color: rgb(21, 168, 185);
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: #ffff00;
+}
+
+
+.maintext::first-line {
+    font-size: 13;
+    font-weight: bold;
+}
+
+#about::first-line {
+    font-size: 13;
+    font-weight: bold;
+}
+
+#about {
+    color: black;
+    background-color: #00bbaa;
+    border-radius: 10px 10px 10px 10px;
+    margin: 60px 10px 1px 1px;
+    padding: 50px;
+    width: 7%;
+    min-height: 200px;
+    overflow: auto;
+    text-overflow: ellipsis;
+    direction: rtl;
+    text-align: center;
+    float: left;
+    display: block;
+    font-family: myfont;
+    text-shadow: #333 0 3px 5px;
+    transition: all 0.5s;
+}
+
+#about:hover {
+    background-color: rgba(0, 100, 150, 0.1);
+    transform: scale(1.4) translate(15px);
+    box-shadow: #555 5px 10px 20px, #555 -5px -10px 20px;
+}
+
+#maintextwrapper {
+    margin: 30px 0px 50px 0px;
+    margin-bottom: 500px;
+    background: linear-gradient(#3355ee, white, #00bbaa);
+    padding: 30px 0;
+    width: 65%;
+    outline: black dotted 1px;
+    float: right;
+}
+
+.maintext {
+    margin: 30px 11% 30px;
+    padding: 40px;
+    border-radius: 10px;
+    direction: rtl;
+    font-family: myfont;
+    text-align: right;
+    transition: all 0.5s;
+}
+
+
+.maintext:nth-child(2n+1) {
+    background-color: #cbcbcb;
+}
+
+.maintext:nth-child(2n) {
+    background-color: #cbcbcb;
+}
+
+.maintext:hover {
+    background-color: white;
+    transform: scale(1.2);
+    box-shadow: #555 5px 10px 20px, #555 -5px -10px 20px;
+}
+
+#wrapper {
+    background-color: rgba(0, 100, 150, 0.5);
+    overflow: hidden;
+    margin-top: -3px;
+}
+
+#footer {
+    position: relative;
+    bottom: 0;
+    width: 96%;
+    padding: 2%;
+    background-color: yellow;
+    text-align: center;
+    animation-name: example3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-direction: alternate;
+    transition: all 0.7s;
+}
+
+#footer:hover {
+    font-size: 1.3em;
+    animation-play-state: running;
+}
+
+.molal_wrapper div {
+    color: black;
+    background-color: white;
+    padding: 30px;
+    border: black solid 3px;
+    z-index: 100;
+    border-radius: 14px;
+    transition: all 0.4s;
+    text-align: right;
+    font-family: myfont;
+}
+
+.modal {
+    position: fixed;
+    top: 200px;
+    width: 50%;
+    text-align: center;
+    margin-right: 25%;
+}
+
+#modal_contact>div:target {
+    opacity: 1;
+    z-index: 100;
+}
+
+.molal_wrapper {
+    width: 100%;
+    height: 200%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -14;
+    position: fixed;
+    top: 0;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.molal_wrapper:target {
+    z-index: 997;
+    opacity: 1;
+    transform: translateY(-50px);
+}
+
+.close_modal a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.close_modal a {
+    color: black;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding-top: 12px;
+    border-radius: 45%;
+    border: 2px black solid;
+    z-index: 997;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+#jump_top {
+    background-image: url(image/jump_top.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    z-index: 995;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+#page_top {
+    position: absolute;
+    top: 0;
+}
+ 
+.jump_down {
+    display: inline-block;
+    margin-top: 45.2%;
+    width: 100%;
+    background: linear-gradient(transparent, #514d98d0 90%), rgba(99, 147, 218, 0.4);
+    padding: 20px 0;
+
+}
+
+#jump_downC {
+    background-image: url(image/jump_down.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    opacity: 1;
+    background-size: 3%;
+    z-index: 1000;
+}
+
+.submenu {
+    position: absolute;
+    width: 200px;
+    background-color: azure;
+    box-shadow: 0 20px 45px black;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -9999;
+    transition: all ease 0.4s;
+}
+
+.submenu li {
+    margin-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 180px;
+    height: 30px;
+    padding: 10px;
+    margin-top: -1px;
+}
+
+.submenu a {
+    color: #333;
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#fer li:hover .submenu {
+    z-index: 894;
+    opacity: 1;
+    margin-top: 10px;
+    visibility: visible;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 70px;
+    height: 20px;
+    background-color: rgba(48, 164, 153, 0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    size: 13px;
+    padding: 25px;
+    position: absolute;
+    top: 115%;
+    left: 5%;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#loading {
+    width: 100%;
+    height: 200%;
+    position: fixed;
+    z-index: 1001;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    margin: 0;
+}
+
+#loading img {
+    margin-top: 15%;
+    margin-right: 40%;
+}
+
+
+
+
+.mySlides {
+    display: block;
+    width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    /* width: 1444px; */
+    height: 20%;
+    position: relative;
+    margin: auto;
+    vertical-align: middle;
+    position: fixed;
+    z-index: -1;
+}
+
+#top_ {
+    width: auto;
+    height: auto;
+    margin-top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#dot_ {
+    margin-top: 42%;
+    position: fixed;
+    margin-right: 48%;
+    z-index: 5;
+}
+
+.active {
+    background-color: #212121;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 0.7s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#button-previous {
+    position: fixed;
+    left: 0;
+    margin-top: 20%;
+    float: left;
+    opacity: 0.5;
+    z-index: 5;
+}
+
+#button-next {
+    position: fixed;
+    margin-top: 20%;
+    float: right;
+    opacity: 0.5;
+    z-index: 5;
+}
+
+#button-next:hover , #button-previous:hover {
+    opacity: 1
+}
+/* #main_{
+    width: 100%;
+    height: 1%;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0);
+} */
+
+

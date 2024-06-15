@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="mystyle.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+</head>
+
+
+<body>
+    <div id="loading"><img src="image/loading.gif"></div>
+    <div id="page_top"></div>
+
+    <!-- <img id="image1" src="image/website.jpg"> -->
+    <!-- <div id="main_"> -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="image/website.jpg">
+            </div>
+            <div class="mySlides fade">
+                <img src="image/website2.jpg">
+            </div>
+            <div class="mySlides fade">
+                <img src="image/website3.jpg">
+            </div>
+        </div>
+    <!-- </div> -->
+    <img id="button-previous" src="image/button-arrow-left-1-128.png" onclick="changeSlide(-1)">
+    <img id="button-next" src="image/button-arrow-right-1-128.png" onclick="changeSlide(1)">
+
+
+    <div id="dot_" style="text-align: center;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div id="navbar">
+        <span>
+            <ul id="fer">
+                <li id="ho"><a class="hoo" href="#">فهرست</a>
+                    <ul class="submenu">
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#experience">تجارب من</a></li>
+                        <li><a href="#education">تحصیلات من</a></li>
+                        <li><a href="#cv">رزومه</a></li>
+                        <li><a href="#contact">ارتباط با من</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </span>
+        <span style="visibility: hidden; display: none;" class="spani"><a href="#experience">تجارب من</a></span>
+        <span class="spani"><a href="#modal_experience">تجارب من</a></span>
+        <span class="spani"><a href="#modal_education">تحصیلات من</a></span>
+        <span class="spani"><a href="#modal_cv">رزومه</a></span>
+        <span class="spani"><a href="#modal_contact">ارتباط با من</a></span>
+        <span id="left_about" style="margin-top: -16px;"><a href="#about">درباره من</a></span>
+    </div>
+
+    <a id="jump_top" href="#page_top"></a>
+ 
+
+    <div class="molal_wrapper" id="modal_experience">
+        <div class="modal">
+            <span class="close_modal"><a href="#close_modal">X</a></span>
+            <h4> تجارب من</h4> <br>
+            برای آموختن هیچ وقت دیر نیست <br>
+            پس چرا همین امروز شروع نمیکنید؟! با دیدن ویدیوهای آموزشی ما به آسانی توسعه دهنده ی وب شوید!
+        </div>
+    </div>
+
+    <div class="molal_wrapper" id="modal_education">
+        <div class="modal">
+            <span class="close_modal"><a href="#close_modal">X</a></span>
+            <h5> تحصیلات من</h5> <br>
+            برای آموختن هیچ وقت دیر نیست <br>
+            پس چرا همین امروز شروع نمیکنید؟! با دیدن ویدیوهای آموزشی ما به آسانی توسعه دهنده ی وب شوید!
+        </div>
+    </div>
+
+    <div class="molal_wrapper" id="modal_cv">
+        <div class="modal">
+            <span class="close_modal"><a href="#close_modal">X</a></span>
+            <h5> رزومه</h5> <br>
+            برای آموختن هیچ وقت دیر نیست <br>
+            پس چرا همین امروز شروع نمیکنید؟! با دیدن ویدیوهای آموزشی ما به آسانی توسعه دهنده ی وب شوید!
+        </div>
+    </div>
+
+    <div class="molal_wrapper" id="modal_contact">
+        <div class="modal">
+            <span class="close_modal"><a href="#close_modal">X</a></span>
+            <h5> ارتباط با من</h5> <br>
+            برای آموختن هیچ وقت دیر نیست <br>
+            پس چرا همین امروز شروع نمیکنید؟! با دیدن ویدیوهای آموزشی ما به آسانی توسعه دهنده ی وب شوید!
+        </div>
+    </div>
+
+    <div id="jump_downC"><a class="jump_down" href="#wrapper"></a> </div>
+    <div id="wrapper">
+
+        <div id="menu">
+            <ul id="ul_">
+                <li><a href="#experience">تجارب من</a></li>
+                <li><a href="#education">تحصیلات من</a></li>
+                <li><a href="#cv">رزومه</a></li>
+                <li><a href="#contact">ارتباط با من</a></li>
+            </ul>
+        </div>
+
+        <div id="maintextwrapper">
+
+            <div id="joy" class="maintext">
+                <h5> لذت یادگیری!</h5><br>
+                برای آموختن هیچ وقت دیر نیست <br>
+                پس چرا همین امروز شروع نمیکنید؟! با دیدن ویدیوهای آموزشی ما به آسانی توسعه دهنده ی وب شوید!
+            </div>
+
+            <div id="experience" class="maintext">
+                <h5> تجارب من</h5><br>
+                برای آموختن هیچ وقت دیر نیست <br>
+                پس چرا همین امروز شروع نمیکنید؟! با دیدن ویدیوهای آموزشی ما به آسانی توسعه دهنده ی وب شوید!
+
+            </div>
+
+            <div id="education" class="maintext">
+                <h5> تحصیلات من</h5><br>
+                برای آموختن هیچ وقت دیر نیست <br>
+                پس چرا همین امروز شروع نمیکنید؟! با دیدن ویدیوهای آموزشی ما به آسانی توسعه دهنده ی وب شوید!
+
+            </div>
+
+            <div id="cv" class="maintext">
+                <h5> رزومه</h5><br>
+                برای آموختن هیچ وقت دیر نیست <br>
+                پس چرا همین امروز شروع نمیکنید؟! با دیدن ویدیوهای آموزشی ما به آسانی توسعه دهنده ی وب شوید!
+
+            </div>
+
+            <div id="contact" class="maintext">
+                <h5> ارتباط با من</h5> <br>
+                برای آموختن هیچ وقت دیر نیست <br>
+                پس چرا همین امروز شروع نمیکنید؟! با دیدن ویدیوهای آموزشی ما به آسانی توسعه دهنده ی وب شوید!
+
+            </div>
+        </div>
+
+
+        <div id="about">
+            <h5 class="tooltip"><span class="tooltiptext">
+                    <h6>این پنجره ی tooltip می باشد </h6>
+                </span>درباره ما</h5><br>
+            ما این سایت را برای آموزش طراحی و توسعه ی وب تاسیس کردیم. <br>
+            امیدواریم مورد پسندتان واقع گردد.
+        </div>
+
+    </div>
+
+
+    <div id="footer">
+        Copyright 2016 &copy; <a href="http://www.maktabkhooneh.org" target="_blank">maktabkhooneh.org</a>
+    </div>
+
+</body>
+<script type="text/javascript" src="myscript.js"></script>
+
+</html>
